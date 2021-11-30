@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 195px 140px 170px ;
+}
+
+header h1{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    font-weight: 500;
+    width: 400px;
+    justify-content: space-between;
+    color: #242E52;
+    
+}
+
+header nav ul a{
+    text-decoration: none;
+}
+
+header nav ul a:visited{
+    text-decoration: none;
+    color: #242E52;
+}
+
+.description-figures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 195px 140px 170px ;
+}
+
+.description{
+    padding-right: 100px;
+}
+
+.description-figures div h2 {
+font-family: 700;
+font-size: 58px;
+line-height: 66,47px;
+color: #232C50;
+
+}
+.description-figures div p {
+    font-family: 500;
+    font-size: 16.56px;
+    width: 330px;
+}
+
+.Get-Started-Button {
+    font-weight: 500;
+    width: 130px;
+    font-size: 13,18px;
+    color: white;
+    background-color:#F3603B ;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+}
+
+.description-articles{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 195px 140px 170px ;
+}
+
+h3 {
+    color: #232851;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.26px;
+}
+
+.differences-description{
+    padding-right: 150px;
+}
+
+.differences-description h3 {
+   width: 400px;
+}
+
+.differences-description p {
+    font-family: 500;
+    font-size: 16.56px;
+    width: 330px;
+}
