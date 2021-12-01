@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 
@@ -45,22 +45,22 @@ header nav ul a:visited{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 195px 140px 170px ;
+    padding: 0px 100px 140px 170px ;
 }
 
 .description{
-    padding-right: 100px;
+    padding-right: 80px;
 }
 
 .description-figures div h2 {
-font-family: 700;
+font-weight: 700;
 font-size: 58px;
 line-height: 66,47px;
 color: #232C50;
 
 }
 .description-figures div p {
-    font-family: 500;
+    font-weight: 500;
     font-size: 16.56px;
     width: 330px;
 }
@@ -81,7 +81,7 @@ color: #232C50;
 .description-articles{
     display: flex;
     justify-content: space-between;
-    padding: 0px 195px 140px 170px ;
+    padding: 0px 90px 140px 170px ;
 }
 
 h3 {
@@ -92,15 +92,118 @@ h3 {
 }
 
 .differences-description{
-    padding-right: 150px;
+    padding-right: 50px;
 }
 
 .differences-description h3 {
-   width: 400px;
+   width: 500px;
 }
 
 .differences-description p {
     font-family: 500;
     font-size: 16.56px;
-    width: 330px;
+    width: 360px;
+}
+
+.differences-articles-list{
+    padding-right: 80px;
+}
+
+.differences-articles-list article h4{
+    color: #323851;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.38px;
+}
+
+.first-article h4::before{
+    content: "01";
+    padding: 10px 25px;
+    color: white;
+    background-color:#F3603B ;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.second-article h4::before{
+    content: "02";
+    padding: 10px 25px;
+    color: white;
+    background-color:#F3603B ;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.third-article h4::before{
+    content: "03";
+    padding: 10px 25px;
+    color: white;
+    background-color:#F3603B ;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+
+
+
+.differences-articles-list article p{
+    color: #B3B2B7;
+    font-size: 16.3px;
+    font-weight: 500;
+    line-height: 25.52px;
+    padding-left: 90px;
+   
+}
+
+.testimonials{
+    padding-bottom: 260px;
+}
+
+.testimonials h3{
+    font-size: 39.21px;
+    text-align: center;
+}
+
+.three-testimonials{
+    display: flex;
+    padding-top: 150px ;
+    justify-content: center;
+
+}
+
+.testimonials div article{
+    background-color:#FAFAFA;
+    width: 450px;
+    padding:50px 20px 20px 20px;
+    position: relative;
+    
+}
+
+.testimonials div article img{
+   width: 70px;
+   height: 70px;
+   position: absolute;
+   right: 180px;
+   top: -41px;
+}
+
+.testimonials div article span{
+   font-weight: 700;
+   font-size: 16.07px;
+   line-height: 25.17px;
+   text-align: center;
+   color: #3F4868;
+   padding-left: 180px;
+}
+
+.testimonials div article p{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 25.06px;
+   text-align: center;
+   color: #B9B9C1;
+   
+}
+
+.testimonials button{ 
+   margin-left: 45vw;
+   margin-top: 50px;
+   
 }
