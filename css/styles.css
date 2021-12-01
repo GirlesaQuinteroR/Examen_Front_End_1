@@ -207,3 +207,41 @@ h3 {
    margin-top: 50px;
    
 }
+
+.orange-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3613C;
+    height: 224px;
+    padding: 100px 140px 100px 140px ;
+}
+
+.orange-bar h3{
+    color: white;
+    width: 438px ;
+    font-size: 40px;
+    line-height: 47.84px;
+}
+
+.Get-Started-Button.bottom{
+    background-color: white;
+    color:#F3603B ;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E26;
+    color: white;
+    height: 247px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.media-logos a i {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
