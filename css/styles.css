@@ -3,6 +3,7 @@
 *{
     margin: 0%;
     box-sizing: border-box;
+    padding: 0px;
 }
 
 body{
@@ -26,9 +27,10 @@ header nav ul{
     display: flex;
     list-style-type: none;
     font-weight: 500;
-    width: 400px;
+    width: 600px;
     justify-content: space-between;
     color: #242E52;
+    padding-right: 150px;
     
 }
 
@@ -297,3 +299,113 @@ footer form input[type="submit"]{
     line-height: 18px;
     color: #8C8C94;
 }
+
+header div:nth-of-type(2) img{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    
+    *{
+        margin: 0%;
+        padding: 0px;
+        box-sizing: border-box;
+    } 
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 50px 20px;
+
+    }
+    header div:nth-of-type(2) img{
+        display: block;
+    }
+    header nav{
+     display: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+    main section.description-figures{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    main section.description-figures div.figures img{
+        width: 100vw;
+        
+    }
+
+    main section.description-figures div.description{
+        width: 100vw;
+    }
+    
+    main section.description-figures div.description h2{
+        width: 100vw;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    main section.description-figures div.description p{
+        width: 90vw;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    main section.description-figures{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 0px;
+    }
+    
+    main section.description-articles{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;   
+    }
+
+    main section.description-articles div.differences-description h3{
+        width: 100vw;
+    }
+
+    main section.testimonials{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    main section.testimonials div article:nth-child(odd) {
+        display: none;
+    }
+    main section.testimonials div article:nth-child(even) {
+        width: 100vw;
+    }
+
+    main section.orange-bar{
+        width: 100vw;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        width: 100vw;
+    }
+
+   
+
+
+
+
+
+  }
