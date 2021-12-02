@@ -170,6 +170,10 @@ h3 {
 
 }
 
+main section.testimonials div.carousel{
+    display: none;
+}
+
 .testimonials div article{
     background-color:#FAFAFA;
     width: 450px;
@@ -202,6 +206,9 @@ h3 {
    text-align: center;
    color: #B9B9C1;
    
+}
+main section.testimonials div.carousel{
+    display: none;
 }
 
 .testimonials button{ 
@@ -259,9 +266,15 @@ footer img{
 
 }
 
-footer ul{
+footer div.menus ul{
     list-style-type: none;
     line-height: 35.38px;
+
+}
+footer div.menus{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
 
 }
 
@@ -290,6 +303,14 @@ footer form input[type="submit"]{
   position: relative;
 }
 
+footer p.copyright1{
+    display: block;
+}
+
+footer p.copyright2{
+    display: none;
+}
+
 .form p{
     position: absolute;
     left: 26px;
@@ -312,16 +333,21 @@ header div:nth-of-type(2) img{
         margin: 0%;
         box-sizing: border-box;
     } 
+
     header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100vw;
-        padding: 50px 20px;
-
+        padding: 40px 30px;
+ 
     }
     header div:nth-of-type(2) img{
         display: block;
+    }
+   
+    header div:nth-of-type(1) img{
+        margin-top: 15px;
     }
     header nav{
      display: none;
@@ -337,15 +363,18 @@ header div:nth-of-type(2) img{
         justify-content: center;
         align-items: center;
         padding: 0px;
+        margin: 0px;
     }
 
     main section.description-figures div.figures img{
-        width: 100vw;
-        
+        width: 90vw;
+
     }
 
     main section.description-figures div.description{
-        width: 100vw;
+       width: 100vw;
+       text-align: center;
+       padding-bottom: 50px;
     }
     
     main section.description-figures div.description h2{
@@ -360,12 +389,16 @@ header div:nth-of-type(2) img{
         text-align: center;
         padding-left: 10px;
     }
+    main section.description-figures div.description button{
+        margin-left: 20vw;
+    }
 
     main section.description-figures{
         display: flex;
         flex-wrap: wrap-reverse;
         padding: 0px;
     }
+    
     
     main section.description-articles{
         display: flex;
@@ -374,16 +407,43 @@ header div:nth-of-type(2) img{
     }
     main section.description-articles div.differences-description{
         padding-right: 0px;
+        text-align: center;
+        padding-bottom: 50px;
     }
 
     main section.description-articles div.differences-description h3{
         width: 100vw;
+        padding-top: 50px;
+        
+    }
+
+    main section.description-articles div.differences-articles-list{
+        padding: 0;
+    }
+    main section.description-articles div.differences-articles-list h4{
+        padding: 0;
+        margin-left: 10px;
+        text-align: start;
+        background-color: rgba(252, 142, 115, 0.1) ;
+        padding: 9.5px 0px;
+        border-top-left-radius:50px;
+        border-bottom-left-radius:50px    
+
+    }
+    main section.description-articles div.differences-articles-list p{
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: 10px;
+        text-align: start; 
+
     }
 
     main section.testimonials{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         padding: 0px;
+        width: 100vw;
     }
 
     main section.testimonials div article:nth-child(odd) {
@@ -393,19 +453,119 @@ header div:nth-of-type(2) img{
         width: 100vw;
     }
 
+    main section.testimonials h3 {
+        padding-top: 50px;
+    }
+
+    main section.testimonials div.three-testimonials {
+        padding-top: 90px;
+    }
+    
+    main section.testimonials div.three-testimonials article {
+        position: relative;
+    }
+    main section.testimonials div.three-testimonials img {
+        position: absolute;
+        left: 42%;
+    }
+
+    main section.testimonials div.three-testimonials span {
+        text-align: center;
+        padding-left: 35vw;
+    }
+    
+    main section.testimonials div.carousel{
+        display: block;
+        text-align: center;
+    }
+    main section.testimonials div.carousel img{
+       width: 100vw;
+       height: 90px; 
+       text-align: center;
+    }
+    main section.testimonials  button{
+       margin-left: 0px;
+       margin-top: 0px;
+       margin-bottom: 50px;
+    }
+
     main section.orange-bar{
         width: 100vw;
+        height: 400px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    main section.orange-bar h3{
+        padding: 50px 0px;
+      width: 90vw;
     }
 
     footer{
         display: flex;
         flex-wrap: wrap;
-        padding: 0px;
+        flex-flow: column-reverse;
+        padding: 70px 0px 30px 0px;
+        width: 100vw;
+        height: 600px;
+    }
+
+    footer div.form{
+        order: 4;
+        text-align: center;
         width: 100vw;
     }
 
-   
+    footer div.menus{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        order: 3;
+    }
 
+
+    footer div.icons {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        order: 2;
+    }
+
+   footer div.icons div.media-logos{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       text-align: center;
+        order: 1;
+        font-size: 30px;
+        width: 100vw;
+        margin-bottom: 30px;
+   }     
+   footer div.icons img{
+        order: 2;
+        width: 50%;
+        text-align: center;
+        margin-left: 90px;
+
+   }     
+
+   footer p.copyright1{
+       display: none;
+   }
+
+   footer p.copyright2{
+       display: block;
+       font-weight: 500;
+       font-size: 12.5px;
+       line-height: 18px;
+       color: #8C8C94;
+       order: 1;
+       text-align: center;
+       margin-top:30px ;
+   }
 
 
 
